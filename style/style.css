@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+nav{
+    height: 90px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 44px;
+    margin-bottom: 50px;
+}
+img{
+    vertical-align: middle;
+    width: 50px;
+    height: 59px;
+}
+#titulo_h2_Article{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+textarea {
+    resize: none;
+    height: 400px;
+    width: 537px;
+    display: block;
+    margin-bottom: 44px;
+    border: none;
+    outline: none;
+    background: #3f51b50d;
+    box-shadow: -1px 2px 20px 0px rgb(194 203 255);
+    padding: 11px;
+    margin-top: 21px;
+}
+button {
+    height: 67px;
+    width: 267px;
+    cursor: pointer;
+}
+
+
+#encriptar{
+    background-color: rgb(10, 56, 113);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: 3px solid #3f9fb5;
+    /* box-shadow: 2px -1px 13px 6px #03A9F4; */
+}
+
+#encriptar:hover{
+    background-color: #186cd3;
+    border: none;
+    box-shadow: burlywood;
+    box-shadow: -1px 2px 20px 0px #3F51B5;
+}
+#desencriptar:hover{
+    background-color: #FFEB3B;
+    border: none;
+    box-shadow: burlywood;
+    box-shadow: -1px 2px 20px 0px #FFC107;
+}
+#copiarMsj:hover{
+    background-color: #1a004b;
+    border: none;
+    box-shadow: burlywood;
+    box-shadow: -1px 2px 20px 0px #626262;
+}
+
+#desencriptar{
+    background-color: #ffeb3b;
+    /* border-radius: 24px; */
+    border: 1px solid #ffd307;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+aside{
+    width: 400px;
+    height: 766px;
+    padding: 20px;
+    border-radius: 32px;
+    background-color: #ffffff;
+   
+}
+#logo{
+    width: -webkit-fill-available;
+    height: 318px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+article{
+    margin-right: 50px;
+}
+#textoEncriptado{
+    font-family: Inter;
+font-size: 24px;
+font-weight: 700;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: center;
+}
+
+#tituloAside{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: #ff3021;
+    line-height: 141%;
+    margin-bottom: 13px;
+}
+
+.content_h2_aside{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    flex-wrap: wrap;
+    /* margin-bottom: 20px; */
+    /* line-height: 200%; */
+    margin-top: 31px;
+}
+
+#p_aside{
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: #495057;
+    line-height: 150%;
+    background-color: white;
+    height: 200px;
+    width: 300px;
+}
+
+#copiarMsj{
+    background-color: #000000;
+     box-shadow: inset 0px -1px 11px 0px rgb(24 24 24 / 3%);
+     color: #ffffff;
+     display: none;
+}
+
+.content-footer{
+    background-color: #607D8B;
+    color: #fffefe;
+    height: 119px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(6 29 57);
+    /* font-weight: revert-layer; */
+    font-family: 'Inter', sans-serif;
+}
+
+#alerta{
+    display: none;
+
+}
+
+
+@media (max-width: 768px) {
+    textarea {
+       height: 150px;
+    }
+ 
+    button {
+       height: 40px;
+    }
+ 
+    #encriptar,
+    #desencriptar,
+    #copiarMsjEncriptado {
+       font-size: 14px;
+    }
+ 
+    #titulo_h2_Article,
+    #tituloAside,
+    #textoEncriptado {
+       font-size: 20px;
+    }
+ }
+
+ @media (max-width: 500px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
+     
+     :root {
+        --main-font: 'Inter', sans-serif;
+        --primary-color: #186cd3;
+        --secondary-color: #ff3021;
+     }
+     
+     #titulo_h2_Article {
+        font-size: 25px;
+        font-weight: bold;
+        font-family: var(--main-font);
+     }
+     
+     textarea {
+        resize: none;
+        height: 200px;
+        width: 100%;
+        display: block;
+        margin-bottom: 1rem;
+        border: none;
+        outline: none;
+        background: #3f51b50d;
+        box-shadow: -1px 2px 20px 0px rgb(194 203 255);
+        padding: 11px;
+        margin-top: 21px;
+     }
+     
+     button {
+        height: 50px;
+        width: 100%;
+        cursor: pointer;
+     }
+     
+     #encriptar,
+     #desencriptar,
+     #copiarMsjEncriptado {
+        font-size: 16px;
+        font-weight: bold;
+        width: 100%;
+     }
+     
+     #encriptar {
+        background-color: var(--primary-color);
+        color: white;
+        border: 3px solid var(--primary-color);
+     }
+     
+     #encriptar:hover {
+        background-color: var(--primary-color);
+        border: none;
+        box-shadow: 0 2px 20px 0px var(--primary-color);
+     }
+     
+     #desencriptar:hover {
+        background-color: #FFEB3B;
+        border: none;
+        box-shadow: 0 2px 20px 0px #FFC107;
+     }
+     
+     #desencriptar {
+        background-color: #D8DFE8;
+        border: 1px solid #0A3871;
+        color: #0A3871;
+     }
+     
+     main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px;
+     }
+     
+     section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+     
+     aside {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        padding: 20px;
+        border-radius: 32px;
+        background-color: #ffffff;
+        box-shadow: inset 0px -1px 11px 0px rgb(24 24 24 / 3%);
+        margin-top: 20px;
+     }
+     
+     #logo {
+        width: 100%;
+        max-height: 200px;
+        margin-bottom: 20px;
+     }
+     
+     #textoEncriptado {
+        font-family: var(--main-font);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-top: 20px;
+     }
+     
+     #tituloAside {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: var(--main-font);
+        text-align: center;
+        color: var(--secondary-color);
+        line-height: 141%;
+        margin-bottom: 13px;
+     }
+     
+     .content_h2_aside {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+     }
+     
+     #p_aside {
+        font-size: 14px;
+        font-family: var(--main-font);
+        text-align: center;
+        color: #495057;
+        line-height: 150%;
+        background-color: white;
+        overflow-y: scroll;
+        max-height: 150px;
+        margin-bottom: 20px;
+     }
+ }
