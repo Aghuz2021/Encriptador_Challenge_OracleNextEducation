@@ -58,7 +58,7 @@ const encriptar = () => {
   
   const mostrarMensajeEncriptado = (textoEncriptado) => {
     const imagen = document.getElementById("logo");
-    imagen.src = "../img/1f512.png";
+    imagen.src = "./img/1f512.png";
     const tituloAside = document.getElementById("tituloAside");
     tituloAside.textContent = "Mensaje encriptado con éxito!";
     tituloAside.style.color = "#3fc93f";
@@ -71,7 +71,7 @@ const encriptar = () => {
   
   const mostrarMensajedesencriptado = (textoEncriptado) => {
     const imagen = document.getElementById("logo");
-    imagen.src = "../img/1f513.png";
+    imagen.src = "./img/1f513.png";
     const tituloAside = document.getElementById("tituloAside");
     tituloAside.textContent = "¡Alerta! Mensaje desencriptado con éxito!";
     tituloAside.style.fontSize = "22px";
