@@ -27,18 +27,25 @@
     <section>
         
         <article>
-            <h2 id="titulo_h2_Article">Encriptador & Desencriptador</h2>
-        
-                <textarea  id="textArea" cols="30" rows="10" placeholder="Ingrese un texto.."></textarea>
-                <button type="button"  id="encriptar" onclick='encriptar()'>Encriptar</button>
-                <button type="button" id="desencriptar" onclick="desencriptar()">Desencriptar</button>
-            
+            <div>
+                <h2 id="titulo_h2_Article">Encriptador & Desencriptador</h2>
+            </div>
+           <div>
+               <textarea  id="textArea" cols="30" rows="10" placeholder="Ingrese un texto.."></textarea>
+            </div>
+            <div id="content_buttom">
+
+                    <button type="button"  id="encriptar" onclick='encriptar()'>Encriptar</button>
+                    <button type="button" id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
         </article>
+
         <aside>
-            <img id='logo' src="./img/1f512.png" alt="">
+            <img id='logo' src="./img/1f513.png" alt="">
             <div class="content_h2_aside">
-                <h2 id="tituloAside">Ningún mensaje fue encontrado</h2>
+                <h2 id="tituloAside">Ningún mensaje fue encontrado <br><i class="fa-solid fa-circle-xmark"></i></h2>
                 <p id="p_aside">Ingresa el texto que desees encriptar o desencriptar.</p>
+                
                 <button type="button"  id="copiarMsj" onclick="copiarTextoEncriptado()">Copiar msj <i class="fa-solid fa-copy"></i></button>
                 <div  id="alerta">
 

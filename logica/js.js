@@ -73,7 +73,7 @@ const encriptar = () => {
     const imagen = document.getElementById("logo");
     imagen.src = "../img/1f513.png";
     const tituloAside = document.getElementById("tituloAside");
-    tituloAside.textContent = "Mensaje desencriptado con éxito!";
+    tituloAside.textContent = "¡Alerta! Mensaje desencriptado con éxito!";
     tituloAside.style.fontSize = "22px";
     tituloAside.style.color = "#ff3021";
     copiarMsj.style.display = "block";
@@ -103,12 +103,13 @@ const encriptar = () => {
     const div = document.getElementById("alerta");
     div.style.display = "block";
     div.style.color = "rgb(105 219 105)";
-    div.style.width = "138px";
+    div.style.width = "100%";
     div.textContent = "Mensaje copiado";
     div.style.background = "#d3ffd3";
     div.style.border = "5px";
     div.style.padding = "5px";
     div.style.marginTop = "13px";
+    div.style.textAlign = "center"
     document.body.removeChild(input);
   
     // Ocultar el mensaje después de 3 segundos
